@@ -226,9 +226,13 @@ public class tabung extends Perhitungan6 {
     }// </editor-fold>//GEN-END:initComponents
 
     private void result2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_result2ActionPerformed
-        double rad = Double.parseDouble(radius.getText());
-        double tal = Double.parseDouble(tall.getText());
-        tabung1(rad, tal);
+        if (radius.getText().equals("") || tall.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double rad = Double.parseDouble(radius.getText());
+            double tal = Double.parseDouble(tall.getText());
+            tabung1(rad, tal);
+        }
     }//GEN-LAST:event_result2ActionPerformed
 
 public Double hitung10 (Double rad, Double tal){
@@ -236,9 +240,13 @@ public Double hitung10 (Double rad, Double tal){
 }
     
     private void result1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_result1ActionPerformed
-        double rad1 = Double.parseDouble(radius1.getText());
-        double tal1 = Double.parseDouble(tall1.getText());
-        tabung2(rad1, tal1);
+         if (radius1.getText().equals("") || tall1.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double rad1 = Double.parseDouble(radius1.getText());
+            double tal1 = Double.parseDouble(tall1.getText());
+            tabung2(rad1, tal1);
+        }
     }//GEN-LAST:event_result1ActionPerformed
    
     public Double hitung11 (Double rad1,Double tal1){

@@ -329,10 +329,14 @@ public class cubo extends Perhitungan4 {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void res1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_res1ActionPerformed
-        double lenn1 = Double.parseDouble(length1.getText());
-        double widd1 = Double.parseDouble(wide1.getText());
-        double heii1 = Double.parseDouble(height1.getText());
-        cubo1(lenn1, widd1, heii1);
+       if (length1.getText().equals("") || wide1.getText().equals("") || height1.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double lenn1 = Double.parseDouble(length1.getText());
+            double widd1 = Double.parseDouble(wide1.getText());
+            double heii1 = Double.parseDouble(height1.getText());
+            cubo1(lenn1, widd1, heii1);
+        }
     }//GEN-LAST:event_res1ActionPerformed
     
     @Override
@@ -341,10 +345,15 @@ public class cubo extends Perhitungan4 {
     }
     
     private void res2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_res2ActionPerformed
-        double lenn2 = Double.parseDouble(length1.getText());
-        double widd2 = Double.parseDouble(wide1.getText());
-        double heii2 = Double.parseDouble(height1.getText());
-        cubo2(lenn2, widd2, heii2);
+        if (length2.getText().equals("") || wide2.getText().equals("") || height2.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double lenn2 = Double.parseDouble(length2.getText());
+            double widd2 = Double.parseDouble(wide2.getText());
+            double heii2 = Double.parseDouble(height2.getText());
+            cubo2(lenn2, widd2, heii2);
+        }
+
     }//GEN-LAST:event_res2ActionPerformed
     @Override
     public Double hitung7 (Double len2, Double wid2, Double hei2){

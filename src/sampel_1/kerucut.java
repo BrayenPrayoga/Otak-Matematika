@@ -237,9 +237,14 @@ public class kerucut extends Perhitungan5 {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        double rad1 = Double.parseDouble(radius1.getText());
-        double tl = Double.parseDouble(tall.getText());
-        kerucut1(rad1, tl);
+        
+         if (radius1.getText().equals("") || tall.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double rad1 = Double.parseDouble(radius1.getText());
+            double tl = Double.parseDouble(tall.getText());
+            kerucut1(rad1, tl);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
     
     @Override
@@ -248,9 +253,13 @@ public class kerucut extends Perhitungan5 {
 }
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        double rad2 = Double.parseDouble(radius2.getText());
-        double sd = Double.parseDouble(side.getText());
-        kerucut2(rad2, sd);
+         if (radius2.getText().equals("") || side.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double rad2 = Double.parseDouble(radius2.getText());
+            double sd = Double.parseDouble(side.getText());
+            kerucut2(rad2, sd);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
     
     @Override

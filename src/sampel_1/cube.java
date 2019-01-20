@@ -210,8 +210,12 @@ public class cube extends Perhitungan3 {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        double litt = Double.parseDouble(literal1.getText());
-        cube1(litt);
+        if (literal1.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double litt = Double.parseDouble(literal1.getText());
+            cube1(litt);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
     @Override
     public Double hitung4(Double lit1){
@@ -222,8 +226,13 @@ public class cube extends Perhitungan3 {
     }//GEN-LAST:event_literal1KeyTyped
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        double litt2 = Double.parseDouble(literal2.getText());
+        if (literal2.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double litt2 = Double.parseDouble(literal2.getText());
         cube2(litt2);
+        }
+        
     }//GEN-LAST:event_jButton2ActionPerformed
     @Override
     public Double hitung5(Double lit2){

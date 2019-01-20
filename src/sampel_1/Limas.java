@@ -141,7 +141,6 @@ DecimalFormat df = new DecimalFormat("#.##");
         jPanel8.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         volume.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        volume.setEnabled(false);
         jPanel8.add(volume, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 130, -1));
 
         jLabel13.setText("Height");
@@ -182,7 +181,6 @@ DecimalFormat df = new DecimalFormat("#.##");
         jPanel9.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
         area.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        area.setEnabled(false);
         jPanel9.add(area, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 130, -1));
 
         side2.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -233,11 +231,13 @@ DecimalFormat df = new DecimalFormat("#.##");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-            double sd = Double.parseDouble(side1.getText());
-            double hi = Double.parseDouble(height.getText());
-            limas1(sd, hi);
-       
-
+        if (side1.getText().equals("") || height.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+        double sd = Double.parseDouble(side1.getText());
+        double hi = Double.parseDouble(height.getText());
+       limas1(sd, hi);
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 @Override
     public Double hitung1(Double sd1, Double hg){
@@ -246,8 +246,12 @@ DecimalFormat df = new DecimalFormat("#.##");
     }
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        double sdd = Double.parseDouble(side2.getText());
-        limas2(sdd);
+        if (side2.getText().equals("")) {
+            JOptionPane.showMessageDialog(null,"Masukan Data");
+        }else{
+            double sdd = Double.parseDouble(side2.getText());
+            limas2(sdd);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 @Override
     public Double hitung1(Double sd2){
