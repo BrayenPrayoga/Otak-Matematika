@@ -16,10 +16,8 @@ public class mainmenusaja extends javax.swing.JFrame {
 //    ResultSet set;
 //    String idnya;
     
-    public Project1 obj;
 
     public mainmenusaja(){
-        obj = new Project1();
         initComponents();
     }
     public mainmenusaja(String ID) {
@@ -37,7 +35,6 @@ public class mainmenusaja extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
         jCheckBoxMenuItem3 = new javax.swing.JCheckBoxMenuItem();
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
@@ -48,7 +45,6 @@ public class mainmenusaja extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        back = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
@@ -63,9 +59,6 @@ public class mainmenusaja extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
         jCheckBoxMenuItem1.setSelected(true);
@@ -79,9 +72,6 @@ public class mainmenusaja extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Agency FB", 1, 24)); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 366, -1, -1));
 
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -163,15 +153,6 @@ public class mainmenusaja extends javax.swing.JFrame {
         jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 130, 130, 140));
-
-        back.setBackground(new java.awt.Color(204, 204, 204));
-        back.setText("Back");
-        back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backActionPerformed(evt);
-            }
-        });
-        jPanel1.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 80, 30));
 
         jPanel6.setBackground(new java.awt.Color(153, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -266,21 +247,6 @@ public class mainmenusaja extends javax.swing.JFrame {
 
         jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 290, 130, 140));
 
-        jLabel12.setText(obj.nama[0]);
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 130, 20));
-
-        jLabel13.setText(obj.nama[2]);
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 80, 20));
-
-        jLabel14.setText(obj.nama[1]);
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 60, 20));
-
         jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ASUS\\Downloads\\army.jpg")); // NOI18N
         jLabel5.setText("jLabel5");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 600));
@@ -297,13 +263,6 @@ public class mainmenusaja extends javax.swing.JFrame {
         tb.setVisible(true);
         this.dispose(); 
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-        // TODO add your handling code here:
-        Project1 pr = new Project1();
-        pr.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_backActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -374,7 +333,6 @@ public class mainmenusaja extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton back;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -384,12 +342,8 @@ public class mainmenusaja extends javax.swing.JFrame {
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
